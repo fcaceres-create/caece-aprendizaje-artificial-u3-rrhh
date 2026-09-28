@@ -76,7 +76,7 @@ export default function App() {
           <button onClick={() => window.print()} title="Imprimir la pestaña actual o guardarla como PDF">
             Imprimir pestaña
           </button>
-          <a className="btn primary" href={ENLACES.informe} target="_blank" rel="noreferrer" title="Informe final en PDF (9 páginas)">
+          <a className="btn primary no-print" href={ENLACES.informe} target="_blank" rel="noreferrer" title="Informe final en PDF (9 páginas)">
             Informe PDF
           </a>
         </div>
