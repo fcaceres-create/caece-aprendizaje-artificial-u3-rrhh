@@ -894,3 +894,30 @@ table.texto td.left {
     color: #fab219;
   }
 }
+
+/* Impresión: tablas completas, sin controles de edición ni elementos agregados por el hosting. */
+@media print {
+  .table-wrap.scroll {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+  select {
+    appearance: none;
+    border: 0;
+    padding: 0;
+    background: none;
+  }
+  details:not([open]),
+  .dropzone,
+  #nl-badge-frame {
+    display: none !important;
+  }
+  .card {
+    break-inside: auto;
+  }
+  tr,
+  .stat,
+  .chart {
+    break-inside: avoid;
+  }
+}

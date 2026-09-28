@@ -176,7 +176,7 @@ export function MasivaTab() {
           Subí un CSV o Excel con una fila por empleado y las mismas columnas que el dataset de IBM. El archivo se procesa en tu
           navegador: no se envía a ningún servidor. Si incluye la columna <code>Attrition</code> (Yes/No), además se evalúa el modelo.
         </p>
-        <div className="grid-2">
+        <div className="grid-2 no-print">
           <label
             className={`dropzone ${arrastrando ? 'over' : ''}`}
             onDragOver={(e) => {
@@ -228,7 +228,7 @@ export function MasivaTab() {
           </div>
         </div>
         {error && <Alert kind="error">{error}</Alert>}
-        <details style={{ marginTop: 10 }}>
+        <details className="no-print" style={{ marginTop: 10 }}>
           <summary>Columnas requeridas ({COLUMNAS_REQUERIDAS.length})</summary>
           <p className="chart-caption">
             {COLUMNAS_REQUERIDAS.join(', ')}. Opcionales: <code>EmployeeNumber</code> y <code>Attrition</code>. Las categorías deben
