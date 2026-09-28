@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { ENLACES } from './enlaces';
 import { ExploratorioTab } from './tabs/ExploratorioTab';
 import { IndividualTab } from './tabs/IndividualTab';
 import { InterpretacionTab } from './tabs/InterpretacionTab';
@@ -72,9 +73,12 @@ export default function App() {
           <button onClick={() => setTheme(nextTheme[theme])} title="Cambiar tema">
             {themeLabel[theme]}
           </button>
-          <button className="primary" onClick={() => window.print()} title="Imprimir o guardar como PDF">
-            Exportar informe
+          <button onClick={() => window.print()} title="Imprimir la pestaña actual o guardarla como PDF">
+            Imprimir pestaña
           </button>
+          <a className="btn primary" href={ENLACES.informe} target="_blank" rel="noreferrer" title="Informe final en PDF (9 páginas)">
+            Informe PDF
+          </a>
         </div>
         <nav className="tabs" role="tablist">
           {TABS.map((t) => (
