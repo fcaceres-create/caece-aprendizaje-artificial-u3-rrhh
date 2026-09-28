@@ -1,0 +1,9 @@
+﻿Modelo,Accuracy,Sensibilidad,Especificidad,Precisión,F1,AUC
+Regresión Logística,0.773,0.676,0.792,0.384,0.49,0.817
+Red Neuronal (MLP),0.882,0.352,0.984,0.806,0.49,0.817
+SVM,0.871,0.31,0.978,0.733,0.436,0.812
+Logística estadística,0.776,0.704,0.789,0.391,0.503,0.796
+Random Forest,0.81,0.451,0.878,0.416,0.432,0.75
+KNN,0.841,0.014,1.0,1.0,0.028,0.742
+Naive Bayes,0.741,0.62,0.765,0.336,0.436,0.737
+Árbol de Decisión (C4.5),0.732,0.437,0.789,0.284,0.344,0.695
